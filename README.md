@@ -22,7 +22,7 @@ This project demonstrates a simple communication system using BPSK modulation an
 ---
 
 ## 🗂 Repository Structure
-BPSK-PRN-Synchronization/
+BPSK-PRN-Synchronization
 ├── Transmitter/                # Transmitter code and resources
 │   ├── transmitter.m           # MATLAB script for BPSK modulation
 │   ├── generateGoldCode.m      # Function to generate PRN code
