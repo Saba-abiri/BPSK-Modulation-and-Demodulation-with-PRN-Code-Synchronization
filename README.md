@@ -66,7 +66,14 @@ BPSK-PRN-Synchronization
 2. Load the recorded signal (e.g., `recorded_signal.wav`). 🎧
 3. Load the transmitted signal parameters from `transmitted_signal.mat`. 📂
 4. Run the script to demodulate the signal and calculate the bit error rate. 📊
+---
+## 🎯 PRN Code Usage
+In this project, the PRN (Pseudo-Random Noise) code is used for synchronization between the transmitter and receiver. The PRN code is appended to the beginning of the transmitted signal, and the receiver uses cross-correlation to detect the start of the signal. This ensures that the receiver can correctly demodulate the data, even if the received signal has been time-scaled (contracted or expanded).
 
+### Key Roles of the PRN Code:
+- **Synchronization**: Helps the receiver find the start of the transmitted signal.
+- **Robustness**: Resistant to noise and interference, ensuring reliable detection.
+- **Time Scaling Correction**: Allows the receiver to handle signals that have been stretched or compressed in time.
 ---
 
 ## 📦 Dependencies
