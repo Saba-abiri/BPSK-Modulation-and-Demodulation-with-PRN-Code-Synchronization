@@ -33,6 +33,7 @@ BPSK-PRN-Synchronization/
 │   └── recorded_signal.wav     # Example recorded signal (optional)
 ├── README.md                   # Project documentation
 └── LICENSE                     # License file
+
 ---
 
 ## 🛠 How It Works
