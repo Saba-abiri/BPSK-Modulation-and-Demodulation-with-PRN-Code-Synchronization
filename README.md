@@ -22,6 +22,7 @@ This project demonstrates a simple communication system using BPSK modulation an
 ---
 
 ## 🗂 Repository Structure
+```
 BPSK-PRN-Synchronization
 ├── Transmitter/                # Transmitter code and resources
 │   ├── transmitter.m           # MATLAB script for BPSK modulation
@@ -33,7 +34,7 @@ BPSK-PRN-Synchronization
 │   └── recorded_signal.wav     # Example recorded signal (optional).
 ├── README.md                   # Project documentation.
 └── LICENSE                     # License file.
-
+```
 ---
 
 ## 🛠 How It Works
