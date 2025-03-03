@@ -1,6 +1,6 @@
-# 📡 BPSK Modulation and Demodulation with PRN Code Synchronization
+# 📡 BPSK Modulation and Demodulation with Sync Code Synchronization
 
-This repository contains MATLAB code for implementing a BPSK (Binary Phase Shift Keying) modulation and demodulation system with PRN (Pseudo-Random Noise) code synchronization. The PRN code is used to find the start of the transmitted signal in the receiver, even if the received signal has been time-scaled (contracted or expanded). 🚀
+This repository contains MATLAB code for implementing a BPSK (Binary Phase Shift Keying) modulation and demodulation system with Sync (Pseudo-Random Noise) code synchronization. The Sync code is used to find the start of the transmitted signal in the receiver, even if the received signal has been time-scaled (contracted or expanded). 🚀
 
 ## 📋 Table of Contents
 1. [Overview](#overview)
@@ -17,16 +17,16 @@ This repository contains MATLAB code for implementing a BPSK (Binary Phase Shift
 ---
 
 ## 🌟 Overview
-This project demonstrates a simple communication system using BPSK modulation and demodulation. The transmitter modulates binary data using BPSK and appends a PRN code at the beginning of the signal for synchronization. The receiver uses cross-correlation with the PRN code to find the start of the signal and demodulates the data. The system is robust to time scaling in the received signal. 📶
+This project demonstrates a simple communication system using BPSK modulation and demodulation. The transmitter modulates binary data using BPSK and appends a Sync code at the beginning of the signal for synchronization. The receiver uses cross-correlation with the Sync code to find the start of the signal and demodulates the data. The system is robust to time scaling in the received signal. 📶
 
 ---
 
 ## 🗂 Repository Structure
 ```
-BPSK-PRN-Synchronization
+BPSK-Sync-Synchronization
 ├── Transmitter/                # Transmitter code and resources
 │   ├── transmitter.m           # MATLAB script for BPSK modulation
-│   ├── generateGoldCode.m      # Function to generate PRN code
+│   ├── generateGoldCode.m      # Function to generate Sync code
 │   └── bpsk_modulate.m         # Function for BPSK modulation
 ├── Receiver/                   # Receiver code and resources
 │   ├── receiver.m              # MATLAB script for BPSK demodulation
@@ -40,13 +40,13 @@ BPSK-PRN-Synchronization
 ## 🛠 How It Works
 ### 📤 Transmitter
 1. Generates random binary data. 🎲
-2. Appends a PRN code to the beginning of the data for synchronization. 🔗
+2. Appends a Sync code to the beginning of the data for synchronization. 🔗
 3. Modulates the data using BPSK. 📡
 4. Broadcasts the signal using `soundsc`. 🔊
 
 ### 📥 Receiver
 1. Records the transmitted signal (or loads a pre-recorded signal). 🎤
-2. Uses cross-correlation with the PRN code to find the start of the signal. 🔍
+2. Uses cross-correlation with the Sync code to find the start of the signal. 🔍
 3. Resamples the received signal to handle time scaling (contraction or expansion). ⏳
 4. Demodulates the BPSK signal to recover the original data. 📟
 5. Calculates the bit error rate (BER) to evaluate performance. 📊
@@ -67,10 +67,10 @@ BPSK-PRN-Synchronization
 3. Load the transmitted signal parameters from `transmitted_signal.mat`. 📂
 4. Run the script to demodulate the signal and calculate the bit error rate. 📊
 ---
-## 🎯 PRN Code Usage
-In this project, the PRN (Pseudo-Random Noise) code is used for synchronization between the transmitter and receiver. The PRN code is appended to the beginning of the transmitted signal, and the receiver uses cross-correlation to detect the start of the signal. This ensures that the receiver can correctly demodulate the data, even if the received signal has been time-scaled (contracted or expanded).
+## 🎯 Sync Code Usage
+In this project, the Sync (Pseudo-Random Noise) code is used for synchronization between the transmitter and receiver. The Sync code is appended to the beginning of the transmitted signal, and the receiver uses cross-correlation to detect the start of the signal. This ensures that the receiver can correctly demodulate the data, even if the received signal has been time-scaled (contracted or expanded).
 
-### Key Roles of the PRN Code:
+### Key Roles of the Sync Code:
 - **Synchronization**: Helps the receiver find the start of the transmitted signal.
 - **Robustness**: Resistant to noise and interference, ensuring reliable detection.
 - **Time Scaling Correction**: Allows the receiver to handle signals that have been stretched or compressed in time.
@@ -83,7 +83,7 @@ In this project, the PRN (Pseudo-Random Noise) code is used for synchronization 
 ---
 
 ## 📊 Results
-- The receiver successfully synchronizes with the transmitted signal using the PRN code. ✅
+- The receiver successfully synchronizes with the transmitted signal using the Sync code. ✅
 - The demodulated data is compared with the original data to calculate the bit error rate (BER). 📈
 - Example output:
 Original Data: [1 0 1 1 0 0 1 0 ...]
