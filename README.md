@@ -98,7 +98,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ---
 
 ## 📜 License
--
+This project is open-source under the **MIT License**. Feel free to use, modify, and contribute!  
 
 ---
 
@@ -107,3 +107,5 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 - Special thanks to the MATLAB community for providing excellent documentation and resources. 🧑‍💻
 - This project was inspired by digital communication systems and synchronization techniques.
 - Special thanks to the MATLAB community for providing excellent documentation and resources.
+---
+💡 **Developed by [Saba Abiri](https://github.com/Saba-abiri)** 🚀  
